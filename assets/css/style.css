@@ -1,0 +1,30 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* color codes
+
+#AC87AA -- purple
+
+#D0B7C8 -- light purple
+
+#ECD3D5 -- lighter purple
+
+#F6F4EA -- background
+
+#F0C8C3 -- pink
+
+*/
+
+body {
+    background-color: #F6F4EA;
+    font-family: 'Roboto Mono', monospace;
+}
+
+#container {
+    margin: 16px
+    ;
+}
