@@ -100,6 +100,7 @@ body {
 #content .established {
   display: flex;
   margin: 6rem 0;
+  align-items: center;
 }
 #content .established .left {
   width: 70%;
@@ -111,6 +112,11 @@ body {
 }
 #content .established .right {
   width: 30%;
+  text-align: end;
+}
+
+#content .established .right {
+margin-right: -80px;
 }
 
 #content .vision {
