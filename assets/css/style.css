@@ -1,11 +1,12 @@
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* color codes
+
+#640265 primary
 
 #AC87AA -- purple
 
@@ -20,11 +21,161 @@
 */
 
 body {
-    background-color: #F6F4EA;
-    font-family: 'Roboto Mono', monospace;
+  background-color: #f6f4ea;
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #640265;
 }
 
 #container {
-    margin: 16px
-    ;
+  /* margin: 16px; */
+}
+
+.header {
+  margin-top: -40px;
+  margin-bottom: 40px;
+}
+
+.header .logo {
+  text-align: center;
+}
+
+.header .logo img {
+  height: 200px;
+}
+.header .nav ul {
+  display: flex;
+  list-style: none;
+  gap: 4rem;
+  text-align: center;
+  justify-content: center;
+}
+
+.header .nav ul a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header .nav ul a li {
+  font-size: 1.2rem;
+}
+
+.hero {
+  background-image: url('../images/estenaSmiling.jpg');
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-y: -80px;
+  display: flex;
+}
+.hero .leftHero {
+  height: 500px;
+  width: 50%;
+  background: rgba(99, 2, 101, 0.959);
+  padding: 5rem;
+}
+
+.hero .leftHero .heroText {
+  color: white;
+  font-weight: 500;
+  font-size: 3rem;
+  line-height: 1.5;
+  margin-top: 3rem;
+}
+
+.hero .rightHero {
+  height: 500px;
+  width: 50%;
+  background: rgba(99, 2, 101, 0.39);
+}
+
+#content {
+  padding: 3rem 5rem;
+  background-color: white;
+}
+
+#content .line {
+  border: 1px solid #ac87aa;
+}
+
+#content .established {
+  display: flex;
+  margin: 6rem 0;
+}
+#content .established .left {
+  width: 70%;
+}
+#content .established .left h4 {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  font-weight: 400;
+}
+#content .established .right {
+  width: 30%;
+}
+
+#content .vision {
+  display: flex;
+  margin: 6rem 0;
+}
+#content .vision .left {
+  width: 30%;
+}
+#content .vision .right h4 {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  font-weight: 400;
+}
+#content .vision .right {
+  width: 70%;
+}
+
+#content .works {
+  margin: 6rem 0;
+}
+
+#content .works .title h2 {
+  color: #0e1927;
+  font-weight: 500;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
+#content .works .tiruHakim {
+  display: flex;
+  margin: 3rem 0;
+}
+#content .works .tiruHakim .left {
+  width: 70%;
+  background-color: #08ccfd;
+  padding: 3rem;
+}
+#content .works .tiruHakim .left h4 {
+  color: #0e1927;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  font-weight: 300;
+}
+#content .works .tiruHakim .right {
+  width: 30%;
+}
+#content .works .tiruHakim .right a {
+}
+#content .works .tiruHakim .right a img {
+  /* height: 100px; */
+  width: 100%;
+}
+
+#footer {
+  padding: 3rem 5rem;
+  text-align: center;
+  border-top: 8px solid #640265;
+}
+
+#footer p.copy-right {
+  color: #ac87aa;
+  font-size: 1.2rem;
+}
+#footer p.copy-right .formation {
+  color: #d0b7c8;
+  font-size: 1rem;
 }
