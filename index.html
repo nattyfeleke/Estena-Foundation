@@ -37,7 +37,6 @@
         <!-- Nav Links -->
       </div>
       <!-- header end -->
-
       <!-- hero start -->
       <div class="hero">
         <div class="leftHero">
@@ -58,7 +57,11 @@
             </h4>
           </div>
           <div class="right">
-          <img src="./assets/images/flower.png" alt="Flower image" srcset="" />
+            <img
+              src="./assets/images/flower.png"
+              alt="Flower image"
+              srcset=""
+            />
           </div>
         </div>
         <div class="line"></div>
@@ -105,5 +108,37 @@
         </p>
       </div>
     </div>
+
+    <script>
+      const body = document.body;
+      let lastScroll = 0;
+
+      window.addEventListener('scroll', () => {
+        // console.log();
+        const currentScroll = window.pageYOffset;
+
+        if (currentScroll <= 0) {
+          body.classList.remove('scroll-up');
+        }
+
+        if (
+          currentScroll > lastScroll &&
+          !body.classList.contains('scroll-down')
+        ) {
+          body.classList.remove('scroll-up');
+          body.classList.add('scroll-down');
+        }
+
+        if (
+          currentScroll < lastScroll &&
+          body.classList.contains('scroll-down')
+        ) {
+          body.classList.remove('scroll-up');
+          body.classList.add('scroll-down');
+        }
+
+        lastScroll = currentScroll;
+      });
+    </script>
   </body>
 </html>
